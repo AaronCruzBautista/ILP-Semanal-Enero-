@@ -4,9 +4,9 @@
 
 #ENTRADA DE DATOS
 #DECLARAR, CREAR O INSTANCIAR VARIABLES
-CALIFICACION_1 = float(input("Ingresa la primera calificacion: "))
-CALIFICACION_2 = float(input("Ingresa la segunda calificacion: "))
-CALIFICACION_3 = float(input("Ingresa la tercera calificacion: "))
+calificacion_1 = float(input("Ingresa la primera calificacion: "))
+calificacion_2 = float(input("Ingresa la segunda calificacion: "))
+calificacion_3 = float(input("Ingresa la tercera calificacion: "))
 
 
 #PROCESOS
@@ -14,9 +14,17 @@ CALIFICACION_3 = float(input("Ingresa la tercera calificacion: "))
 #1 POTENCIA Y RAIZ
 #2 MULTI Y DIVI
 #3 SUMA Y RESTA
-promedio = (CALIFICACION_1 + CALIFICACION_2 + CALIFICACION_3)/3
+promedio = (calificacion_1 + calificacion_2 + calificacion_3)/3
+print("El promedio de las 3 calificaciones es:", round(promedio,2))
+if (promedio>6 and promedio<=10):
+    print("APROBADO")
+elif(promedio == 6):
+    print("APENAS APROBADO")
+elif(promedio>=0 and promedio < 6):
+    print("REPROBADO")
+elif(promedio<0 or promedio>10):
+    print("PROMEDIO NO VALIDO")
 
 
 
-#SALIDA DE DATOS
-print("El promedio de las 3 calificaciones es:", promedio)# que hay
+
