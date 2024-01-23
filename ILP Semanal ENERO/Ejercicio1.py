@@ -24,7 +24,7 @@ elif(promedio>=0 and promedio < 6):
     print("REPROBADO")
 elif(promedio<0 or promedio>10):
     print("PROMEDIO NO VALIDO")
-
+#CAMBIOS
 
 
 
