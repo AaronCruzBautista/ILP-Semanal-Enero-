@@ -19,4 +19,4 @@ promedio = (CALIFICACION_1 + CALIFICACION_2 + CALIFICACION_3)/3
 
 
 #SALIDA DE DATOS
-print("El promedio de las 3 calificaciones es:", promedio)
+print("El promedio de las 3 calificaciones es:", promedio)# que hay
