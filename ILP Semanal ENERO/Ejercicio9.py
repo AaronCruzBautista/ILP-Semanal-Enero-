@@ -30,10 +30,10 @@ def Nomina():
 def generar_contrasena(longitud):
     caracteres = ["a", "b", "C", "D", "1", "8", "_", "*",]
     contraseña = ""
-    for i in caracteres: 
-        contraseña = i[random.randint(0,6)]
+    for _ in range(longitud): 
+        contraseña += caracteres[random.randint(0,7)]
+    return contraseña
 
-    print("Tu contraseña es: ",contraseña)
     # import secrets
     # import string
 
@@ -77,7 +77,8 @@ elif(opción==2):
     print("Tu sueldo neto es: ", round(Nomina(), 2))
 
 elif(opción==3):
-    generar_contrasena(5)
+    caracteres = int(input("Ingrese el número de caracteres de la contraseña: "))
+    print("Contraseña = ", generar_contrasena(caracteres))
 
 elif(opción==4):
     Personal()
